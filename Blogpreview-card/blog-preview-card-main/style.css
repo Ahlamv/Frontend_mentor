@@ -17,13 +17,13 @@ body{
     gap: 24px;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 7px 7px #111111;
+    box-shadow: 8px 8px #111111;
     border:1px solid #111111;
 }
 .blog-image{
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    height: 200px;
+    width: 100%
 }
 .description{
     display: flex;
@@ -71,3 +71,25 @@ body{
     font-size: 14px;
     font-weight: 800;
 }
+
+@media (min-width: 768px){
+    .card{
+        width: 384px;
+    }
+
+    .tag{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .desc{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    }
