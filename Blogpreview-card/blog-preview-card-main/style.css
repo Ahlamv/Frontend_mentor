@@ -23,7 +23,10 @@ body{
 .blog-image{
     border-radius: 10px;
     height: 200px;
-    width: 100%
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    box-sizing: border-box;
 }
 .description{
     display: flex;
