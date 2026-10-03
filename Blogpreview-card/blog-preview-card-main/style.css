@@ -12,12 +12,13 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 501px;
     width: 327px;
     padding: 24px 24px;
     gap: 24px;
     box-sizing: border-box;
     border-radius: 20px;
+    box-shadow: 7px 7px #111111;
+    border:1px solid #111111;
 }
 .blog-image{
     border-radius: 10px;
@@ -34,10 +35,11 @@ body{
 .tag{
     color: #111111;
     background-color: #F4D04E;
-    padding: 12px, 4px;
+    padding: 4px 12px;
     font-size: 12px;
     font-weight: 800;
     box-sizing: content-box;
+    border-radius: 4px;
 }
 .date{
     color: #111111;
