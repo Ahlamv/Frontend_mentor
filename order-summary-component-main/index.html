@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
@@ -12,26 +14,130 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color:  hsl(225, 100%, 94%);
+      font-size: 18px;
+      font-family: "Hanken Grotesk", sans-serif;
+      background-image: url(./images/pattern-background-desktop.svg);
+    }
+    .container{
+      background-color:  hsl(225, 100%, 98%);
+      min-height: auto;
+      width: 343px;
+      margin: 64px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 16px;
+      border-radius: 24px;
+      overflow: hidden;
+      
+    }
+    .img{
+      overflow: hidden;
+    }
+    .img img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .order{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 24px;
+    }
+    .order .title{
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .order .desc{
+      color: hsl(224, 23%, 55%);
+      line-height: 24px;
+    }
+
+    .annual{
+      
+      background-color:  hsl(226, 100%, 97%);
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-start;
+      gap: 32px;
+      align-items:center;
+      padding: 16px;
+      border-radius: 12px;
+      
+    }
+    .annual .change{
+      color:blue;
+      font-weight: 700;
+      margin-left: auto;
+      text-decoration: underline;
+    }
+    .annual .ann{
+      font-weight: 700;
+    }
+    .circle{
+      display:felx;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+
+    }
+    .button{
+      color: white;
+      font-weight: 700;
+      background-color:  hsl(245, 75%, 52%);
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 6px 7px 7px hsla(228, 63%, 53%, 0.25);
+    }
+    .canc{
+      font-weight: 700;
+      color:hsl(223, 19%, 40%);
+    }
+    .annual .change:hover{
+      color: hsl(252, 100%, 67%);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button:hover{
+      background-color: hsl(252, 100%, 67%);
+      cursor: pointer;
+    }
+    .canc:hover{
+      cursor: pointer;
+      color:hsl(223, 47%, 23%) ;
+    }
+    @media (min-width: 768){
+      body{
+        background-image: url(./images/pattern-background-desktop.svg)
+      }
+    }
   </style>
+  
 </head>
 <body>
+  <div class="container">
+    <div class="img"><img src="./images/illustration-hero.svg"></div>
+    <div class="order">
+      <div class="title">Order Summary</div>
+      <div class="desc">You can now listen to millions of songs, audiobooks, and podcasts on any 
+         device anywhere you like!</div>
+      <div class="annual">
+        <div class="circle"><img src="./images/icon-music.svg"></div>
+        <div class="plan">
+          <div class="ann">Annual Plan</div>
+          <div>$59.99/year</div>
+        </div>
+        <div class="change">Change</div>
+      </div>
+      <div class="button">Proceed to Payment</div>
+      <div class="canc">Cancel Order</div>
+    </div>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  </div>
 </body>
 </html>
